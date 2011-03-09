@@ -1,7 +1,16 @@
 # -*- encoding: utf-8 -*-
 """
-django-thumbs by Antonio Melé
-http://django.es
+django-thumbs by Antonio Melé (http://django.es)
+See http://code.google.com/p/django-thumbs/
+
+original version: 4
+original latest commit: Jun 08, 2009
+
+edited by iorlas (http://blog.soulrobber.ru/)
+See https://github.com/iorlas/django-thumb2
+
+version 0.9
+
 """
 from django.db.models import ImageField
 from django.db.models.fields.files import ImageFieldFile
@@ -48,7 +57,7 @@ def generate_thumb(img, thumb_size, format):
         # thumbnail of the cropped image (with ANTIALIAS to make it look better)
         image2.thumbnail(thumb_size, Image.ANTIALIAS)
     
-    #so, we need to rewrite this fun totally, but now, til i use only not quad sizes, its ok too
+    #so, we need to rewrite this fun totally, but now, til i use only not quad sizes, it's ok too
     else:
         ## not quad
         #image2 = image

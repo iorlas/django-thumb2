@@ -70,4 +70,4 @@ Dont believe me? Just check it:
     >>> img.size
     (30, 50)
 
-This is no makes sense, itn't? Thats why i've reworked this myself.
+This is no sense, itn't? Thats why i've reworked this myself.

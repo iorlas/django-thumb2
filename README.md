@@ -23,14 +23,12 @@ django-thumb2 requires django >1.1. Perfectly works on 1.2.
 ## Working example
 
 _models.py_
-```python
- from django.db import models
- from thumbs import ImageWithThumbsField
 
- class Person(models.Model):
-     photo = ImageWithThumbsField(upload_to='images', sizes=((125,125),(200,200)))
-     second_photo = ImageWithThumbsField(upload_to='images')
-```
+    from django.db import models
+    from thumbs import ImageWithThumbsField
+    class Person(models.Model):
+        photo = ImageWithThumbsField(upload_to='images', sizes=((125,125),(200,200)))
+        second_photo = ImageWithThumbsField(upload_to='images')
 
 In this example we have a `Person` model with 2 image fields.
 
@@ -71,3 +69,5 @@ Dont believe me? Just check it:
     (30, 50)
 
 This is no sense, itn't? Thats why i've reworked this myself.
+
+

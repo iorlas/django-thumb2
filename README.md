@@ -60,15 +60,15 @@ So, it just fits image into needed size, what makes whitespace in the bottom or 
 Dont believe me? Just check it:
 
 ```python
->>> img = Image.open("check.png")
->>> img
-<PIL.PngImagePlugin.PngImageFile image mode=RGB size=300x500 at 0x7F906D696B90>
->>> img.size
-(300, 500)
->>> img.thumbnail((200, 50), Image.ANTIALIAS)
->>> img
-<PIL.PngImagePlugin.PngImageFile image mode=RGB size=30x50 at 0x7F906D696B90>
->>> img.size
-(30, 50)
+    >>> img = Image.open("check.png")
+    >>> img
+    <PIL.PngImagePlugin.PngImageFile image mode=RGB size=300x500 at 0x7F906D696B90>
+    >>> img.size
+    (300, 500)
+    >>> img.thumbnail((200, 50), Image.ANTIALIAS)
+    >>> img
+    <PIL.PngImagePlugin.PngImageFile image mode=RGB size=30x50 at 0x7F906D696B90>
+    >>> img.size
+    (30, 50)
 ```
 This is no makes sense, itn't? Thats why i've reworked this myself.
